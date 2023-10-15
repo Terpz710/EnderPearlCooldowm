@@ -1,0 +1,6 @@
+name: EnderPearlCoolDown
+version: 1.0.0
+author: Terpz710
+api: 5.0.0
+main: Terpz710\EnderPearlCoolDown\Main
+description: Adds a cool down to the ender pearl

@@ -5,6 +5,7 @@ namespace Terpz710\EnderPearlCoolDown;
 use pocketmine\event\Listener;
 use pocketmine\event\entity\ProjectileLaunchEvent;
 use pocketmine\plugin\PluginBase;
+use pocketmine\entity\Entity;
 use pocketmine\player\Player;
 
 class Main extends PluginBase implements Listener {
@@ -16,7 +17,7 @@ class Main extends PluginBase implements Listener {
 
     public function onProjectileLaunch(ProjectileLaunchEvent $event) {
         $projectile = $event->getEntity();
-        if ($projectile instanceof \pocketmine\entity\projectile\EnderPearl) {
+        if ($projectile instanceof EnderPearl) {
             $player = $projectile->getOwningEntity();
             if ($player !== null) {
                 $playerName = $player->getName();

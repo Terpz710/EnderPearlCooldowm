@@ -6,6 +6,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\entity\ProjectileLaunchEvent;
 use pocketmine\plugin\PluginBase;
 use pocketmine\entity\Entity;
+use pocketmine\entity\projectile\EnderPearl;
 use pocketmine\player\Player;
 
 class Main extends PluginBase implements Listener {
